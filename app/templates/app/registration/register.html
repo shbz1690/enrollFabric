@@ -1,0 +1,76 @@
+﻿{% extends "base.html" %}
+{% block title %}User Registration{% endblock %}
+{% block head %}User Registration{% endblock %}
+{% block content %}
+<script type="text/javascript">
+    $(document).ready(function () {
+        alert('Hi');
+        $('[name="institution"]').change(function () {
+            var end = this.value;
+            if (end == 'Other') {
+                $('[name="otherInstitute"]').show();
+            }
+            else {
+                $('[name="otherInstitute"]').hide();
+            }
+        })
+    });
+</script>
+
+<div class="row">
+        <section id="registerForm">   
+            <div style="font-size:15px; color:red;">
+              The fields marked with an asterisk (*) are mandatory.
+            </div><br/>       
+              <form method="post" action=".">{% csrf_token %}
+              <div class="form-group">
+                      <label for="id_firstName" >First Name (*)</label>
+                           {{ form.firstName }}
+              </div>
+              <div class="form-group">
+                      <label for="id_lastName" >Last Name (*)</label>                      
+                           {{ form.lastName }}                       
+              </div>
+              <div class="form-group">
+                      <label for="id_email">Email Address (*)</label>                      
+                           {{ form.emailAddress }}
+              </div>
+              <div class="form-group">
+                      <label for="id_phone" >Contact Number</label>
+                           {{ form.phoneNumber }}
+              </div>
+              <div class="form-group">
+                      <label for="id_orcid">Orcid ID  (<a href="https://orcid.org/register">Get Orcid ID</a>)</label>
+                           {{ form.orchidNumber }}   
+              </div>
+              <div class="form-group">
+                      <label for="id_intitution">Institution (*)</label>   
+                                                          
+                           {{ form.institution }}
+              </div>
+              <div id="otrInst" class="form-group">
+                      <label for="id_otherintitution" >Other Institution</label>
+                           {{ form.otherInstitute }}
+              </div>
+              <div class="form-group">        
+                   <label for="id_ctsaPI">CTSA Prinicipal Investigator (*)</label>                                    
+                     {{ form.cstaPI }}
+                     
+              </div> 
+            <div class="form-group">        
+                   <label for="id_ctsaPI">CTSA Prinicipal Investigator Email (*)</label>                                    
+                     {{ form.cstaPIEmail }}
+                     
+              </div> 
+              <div class="form-group" style="margin-left:60px">
+                  <br/><input type="submit" value="Register" class="btn btn-primary" />
+              </div>
+            
+       </form>
+     </section>
+   </div>
+                                                      
+            
+        
+{% endblock %}
+

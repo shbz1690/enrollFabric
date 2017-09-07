@@ -1,0 +1,72 @@
+﻿{% extends "base.html" %}
+{% block title %}User Registration{% endblock %}
+{% block head %}User Registration{% endblock %}
+{% block content %}
+
+
+<div class="row">
+        <section id="registerForm">   
+            <div style="font-size:15px; color:red;">
+              The fields marked with an asterisk (*) are mandatory.
+            </div><br/>       
+              <form method="post" action=".">{% csrf_token %}
+              <div class="form-group">
+                      <label for="id_firstName" >First Name (*)</label>
+                           {{ form.firstName }}
+              </div>
+              <div class="form-group">
+                      <label for="id_lastName" >Last Name (*)</label>                      
+                           {{ form.lastName }}                       
+              </div>
+              <div class="form-group">
+                      <label for="id_email">Username (*)</label>                      
+                           {{ form.username }}
+              </div>
+                          <div class="form-group">
+                      <label for="id_intitution">Institution (*)</label>   
+                                                          
+                           {{ form.institution }}
+              </div>
+              <div class="form-group">
+                      <label for="id_phone" >Contact Number</label>
+                           {{ form.phoneNumber }}
+              </div>
+              <div class="form-group">
+                      <label for="id_orcid">Orcid ID  (<a href="https://orcid.org/register">Get Orcid ID</a>)</label>
+                           {{ form.orchidNumber }}   
+              </div>
+
+              <div class="form-group">        
+                   <label for="id_ctsaPI">CTSA Prinicipal Investigator (*)</label>                                    
+                     {{ form.cstaPI }}
+                     
+              </div> 
+            <div class="form-group">        
+                   <label for="id_ctsaPI">CTSA Prinicipal Investigator Username (*)</label>                                    
+                     {{ form.cstaPIUsername }}
+                     
+              </div> 
+            <div class="form-group">        
+                   <label for="id_ctsaPI">CTSA Prinicipal Investigator Institute (*)</label>                                    
+                     {{ form.ctsaPIInstitution }}
+                     
+              </div> 
+            <div class="form-group">        
+                   <label for="id_ctsaPI">CTSA Prinicipal Investigator Phone Number (*)</label>                                    
+                     {{ form.ctsaPIPhoneNumber }}
+                     
+              </div> 
+
+              <div class="form-group" >
+                  <br/>
+                  <input type="submit" value="Verify Information" class="btn btn-primary" />
+              </div>
+            
+       </form>
+     </section>
+   </div>
+                                                      
+            
+        
+{% endblock %}
+
