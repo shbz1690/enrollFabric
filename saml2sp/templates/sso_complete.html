@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content %}
+<b>Submitted Information</b>
+<br />
+<b>First Name: </b>{{ first_Name }}
+<br />
+<b>Last Name: </b>{{ last_Name }}
+<br />
+<b>Email: </b>{{ email }}
+<br />
+<b>Phone Number: </b>{{ phone_Number }}
+<br /><br />
+<b>Information retrieved from your Institution: </b><br />
+{% if attributes %}
+This assertion includes these attributes:
+<ul>
+{% for name, value in attributes.items %}
+<li>{{ name }}: {{ value }}
+{% endfor %}
+</ul>
+{% else %}
+This assertion included no attributes.
+{% endif %}
+<hr>
+<br />
+{{ verification_status_message }}
+<br />
+{% if verification_status == 1 %}
+<div class="form-group" >
+<br/><br />
+   <input type="submit" value="Submit" class="btn btn-primary" />
+</div>
+{% else %}
+Please resubmit information.
+{% endif %}
+{% endblock content %}

@@ -1,0 +1,6 @@
+django ==1.8
+BeautifulSoup ==3.2.1
+django-saml2-sp ==0.2
+
+
+

@@ -1,0 +1,80 @@
+<html>
+<head>
+<style>
+div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+header {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+
+footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+    margin-top: 35%;
+}
+
+nav {
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+   
+nav ul a {
+    text-decoration: none;
+}
+
+article {
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<header>
+   <h1>FABRIC GALAXY</h1>
+</header>
+  
+<nav>
+  <ul>
+    <li><a href="http://www.samltestcnmc.com/">Dashboard</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+    <br />
+    {% block login %}
+    
+	{% endblock %}
+  </ul>
+</nav>
+<article>
+ {% block content %}
+    
+ {% endblock %}
+</article>
+
+<footer>Copyright &copy; fabric.com</footer>
+
+</div>
+
+</body>
+</html>

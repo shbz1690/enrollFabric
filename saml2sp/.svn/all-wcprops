@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/60/branches/slo-assert/sptest/saml2sp
+END
+views.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/60/branches/slo-assert/sptest/saml2sp/views.py
+END
+xml_signing.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/58/branches/slo-assert/sptest/saml2sp/xml_signing.py
+END
+xml_templates.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/60/branches/slo-assert/sptest/saml2sp/xml_templates.py
+END
+sample_slo.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/60/branches/slo-assert/sptest/saml2sp/sample_slo.py
+END
+xml_render.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/58/branches/slo-assert/sptest/saml2sp/xml_render.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/49/branches/slo-assert/sptest/saml2sp/__init__.py
+END
+saml2sp_settings.py
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/58/branches/slo-assert/sptest/saml2sp/saml2sp_settings.py
+END
+codex.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/49/branches/slo-assert/sptest/saml2sp/codex.py
+END
+models.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/49/branches/slo-assert/sptest/saml2sp/models.py
+END
+urls.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/49/branches/slo-assert/sptest/saml2sp/urls.py
+END
+common.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/58/branches/slo-assert/sptest/saml2sp/common.py
+END
